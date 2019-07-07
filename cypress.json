@@ -1,0 +1,17 @@
+{
+    "projectId": "desafio-qa",
+    "baseUrl": "https://desafio-qa.herokuapp.com/",
+    "video": false,
+    "viewportWidth": 1400,
+    "viewportHeight": 800,
+    "ignoreTestFiles": "*.js",
+    "responseTimeout": 50000,
+    "requestTimeout": 7000,
+    "pageLoadTimeout": 90000,
+    "defaultCommandTimeout": 60000,
+    "cypress-cucumber-preprocessor": {
+      "nonGlobalStepDefinitions": true,
+      "step_definitions": "cypress/support/step_definitions/"
+    }
+  }
+  

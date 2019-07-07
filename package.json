@@ -1,0 +1,25 @@
+{
+  "name": "desafio-qa",
+  "version": "1.0.0",
+  "description": "Desafio QA, Gabriel Figueiredo",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielfign/desafio-qa.git"
+  },
+  "keywords": [],
+  "author": "Gabriel Figueiredo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielfign/desafio-qa/issues"
+  },
+  "homepage": "https://github.com/gabrielfign/desafio-qa#readme",
+  "devDependencies": {
+    "cypress": "^3.3.2",
+    "cypress-cucumber-preprocessor": "^1.12.0"
+  }
+}
