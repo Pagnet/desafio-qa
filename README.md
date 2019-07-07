@@ -1,4 +1,4 @@
-# Desafio QA - Gabriel Figureido
+# Desafio QA - Gabriel Figueiredo
 
 > Repositório de automação utilizando Cypress + Cucumber
 
