@@ -9,3 +9,7 @@ beforeEach(() => {
 Then(`verifica se o usuário visualiza a pagina da lista de Importações`, () => {
     cy.contains('Lista de importações da sua loja').should('be.visible')
 })
+
+Then(`verifica se o usuário {string} se encontra no primeiro da lista de importação`, (string) => {
+  cy.get('td').eq(0).should('contain', string)
+})

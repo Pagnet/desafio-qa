@@ -6,7 +6,8 @@
   "scripts": {
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "feature-express:run": "feature-express ./ pt 4444"
+    "feature-express:run": "feature-express ./ pt 4444",
+    "cypress:tags": "cypress run -e TAGS='@integracao'"
   },
   "repository": {
     "type": "git",

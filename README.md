@@ -28,6 +28,10 @@ $ npm run cypress:open
 $ npm run cypress:run
 ```
 
+### Features
+```shell
+$ npm run feature-express:run
+```
 ## Fala comigo
 
 - Linkedin: <a href="https://www.linkedin.com/in/gabriel-figueiredo-109752103/" target="_blank">`Gabriel Figueiredo`</a>
