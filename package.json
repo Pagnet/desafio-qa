@@ -6,6 +6,7 @@
   "scripts": {
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
+    "cypress:report": "cypress run && start ./mochawesome-report/mochawesome.html",
     "feature-express:run": "feature-express ./ pt 4444",
     "cypress:tags": "cypress run -e TAGS='@integracao'"
   },
@@ -22,6 +23,8 @@
   "homepage": "https://github.com/gabrielfign/desafio-qa#readme",
   "devDependencies": {
     "cypress": "^3.3.2",
-    "cypress-cucumber-preprocessor": "^1.12.0"
+    "cypress-cucumber-preprocessor": "^1.12.0",
+    "mocha": "^5.2.0",
+    "mochawesome": "^4.0.1"
   }
 }

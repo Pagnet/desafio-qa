@@ -5,6 +5,7 @@
     "viewportWidth": 1400,
     "viewportHeight": 800,
     "ignoreTestFiles": "*.js",
+    "reporter": "mochawesome",
     "responseTimeout": 50000,
     "requestTimeout": 7000,
     "pageLoadTimeout": 90000,

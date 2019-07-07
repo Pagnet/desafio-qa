@@ -32,6 +32,13 @@ $ npm run cypress:run
 ```shell
 $ npm run feature-express:run
 ```
+<img align="right" src="./cypress/docs/report-mocha-teste.jpg" alt="Mochawesome Report" width="50%" />
+
+### Report
+```shell
+$ npm run cypress:report
+```
+
 ## Fala comigo
 
 - Linkedin: <a href="https://www.linkedin.com/in/gabriel-figueiredo-109752103/" target="_blank">`Gabriel Figueiredo`</a>

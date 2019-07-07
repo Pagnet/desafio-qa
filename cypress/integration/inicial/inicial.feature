@@ -1,7 +1,7 @@
 
 # language: pt
 
-Funcionalidade: Visualização plataforma de Lista de Importações
+Funcionalidade: Testes plataforma de Lista de Importações
 
         Eu como usuário, gostaria de visualizar a tela da aplicação Lista de Importações.
 
