@@ -15,3 +15,7 @@ Funcionalidade: Testes plataforma de Lista de Importações
     @integracao
     Cenário: Verifica ordem do usuário João Silva, na lista de Importações
         Então verifica se o usuário "João Silva" se encontra no primeiro da lista de importação 
+
+    @request
+    Cenário: Validar o título da página via Requisição
+        Então Verifica se o titulo da página é igual a Teste realizado por Saulo Santigo via requisição
