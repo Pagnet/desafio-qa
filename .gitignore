@@ -1,0 +1,5 @@
+﻿.idea/
+target/
+debug.log
+.classpath
+.idea/workspace.xml
