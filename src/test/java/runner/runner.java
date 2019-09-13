@@ -10,9 +10,6 @@ import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 
 
-public class runner {
-
-
     @RunWith(Cucumber.class)
     @CucumberOptions(
             features = {"src/test/java/features/"},
