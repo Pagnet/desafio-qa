@@ -13,12 +13,13 @@ Especificação:
 
 # Modo de usar
 
-mvn package -Dbrowser=CHROME -DpathDriver=/path/to/browser_driver
+mvn package -Dbrowser=CHROME -DpathDriver=/path/to/browser_driver -Denvironment=PRD
 
 Possíveis parametros para inicialização
 
 -Dbrowser = CHROME ( nó momento com suporte apenas para o chrome )
 -DpathDriver = Caminho do driver correspondente ao browser
+--Denvironment= ambiente em que se esta realizando o teste
 
 # DefaultApplicationInitializer: Inicia o framework.
 new DefaultApplicationInitializer();

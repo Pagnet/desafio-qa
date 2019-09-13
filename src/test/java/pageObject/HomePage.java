@@ -7,6 +7,7 @@ import br.com.blue.util.Globals;
 public class HomePage {
 
     ManagerData managerData = new ManagerData();
+    public static HomePage homePage = new HomePage();
 
     public void homePage() throws Exception {
 

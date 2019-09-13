@@ -12,24 +12,25 @@ import org.junit.runner.RunWith;
 
     @RunWith(Cucumber.class)
     @CucumberOptions(
-            features = {"src/test/java/features/"},
-            glue = {"steps"}
+            features = {"src/test/java/features/caseTests.feature"},
+            tags="@test",
+            glue = {"steps/caseTests.java"}
 
     )
     public class runner {
 
         @BeforeClass
-        public void inicializa() throws Exception {
+        public static void inicializa() throws Exception {
             new DefaultApplicationInitializer();
             ReportManager.getInstance().generateReport("Testes Desafio QA");
         }
 
 
-        @AfterClass
-        public void finalizaReport() {
-            Globals.browser.close();
 
+        @AfterClass
+        public static void finalizaReport() {
+            Globals.browser.close();
         }
 
-    
+
 }

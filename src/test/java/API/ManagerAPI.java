@@ -14,7 +14,7 @@ public class ManagerAPI {
 
     public static ManagerAPI global = new ManagerAPI();
 
-    static String url = PropertiesFactory.getProp().getProperty("prop.endpoint");
+    static String url = PropertiesFactory.getProp().getProperty("prop.url");
 
     public Response response;
 

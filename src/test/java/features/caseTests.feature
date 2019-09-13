@@ -1,5 +1,5 @@
 # language: pt
-
+@test
   Funcionalidade: Estes casos de testes descrevem as validações realizadas  no sistema Lista de Importações.
 
   Contexto:
