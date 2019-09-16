@@ -42,6 +42,8 @@ public class DefaultApplicationInitializer implements ApplicationInitializer {
             browser = new ChromeBrowser();
         }
 
+        browser.startWithGui();
+
         BrowserManager browserManager = new BrowserManager(browser);
 
         EnvironmentEnum environment = EnvironmentEnum.valueOf(System.getProperty("environment"));

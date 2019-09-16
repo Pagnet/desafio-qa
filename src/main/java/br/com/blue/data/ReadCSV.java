@@ -14,7 +14,7 @@ public class ReadCSV {
 
         try {
 
-            File caminhoArquivoCSV = new File(PropertiesFactory.getProp().getProperty("prop.filecsv"));
+            File caminhoArquivoCSV = new File(System.getProperty("user.dir") +"/"+PropertiesFactory.getProp().getProperty("prop.filecsv"));
             Scanner lercsv = new Scanner(caminhoArquivoCSV);
             objData = new HashSet<>();
 
@@ -25,11 +25,12 @@ public class ReadCSV {
 
                 if (linha != null) {
 
-                    String nome = coluna[0].trim();
-                    String preco = coluna[1].trim();
-                    String quantia = coluna[2].trim();
+                    String id = coluna[0].trim();
+                    String nome = coluna[1].trim();
+                    String preco = coluna[2].trim();
+                    String quantia = coluna[3].trim();
 
-                    objData.add(new ObjectData(new String[]{nome},new double[]{Double.parseDouble(preco)},
+                    objData.add(new ObjectData(new int[]{Integer.parseInt(id)},new String[]{nome},new double[]{Double.parseDouble(preco)},
                             new int[]{Integer.parseInt(quantia)}));
                 }
 

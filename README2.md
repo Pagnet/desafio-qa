@@ -21,24 +21,6 @@ Possíveis parametros para inicialização
 -DpathDriver = Caminho do driver correspondente ao browser
 --Denvironment= ambiente em que se esta realizando o teste
 
-# DefaultApplicationInitializer: Inicia o framework.
-new DefaultApplicationInitializer();
+# Finalizando Teste
 
-
-# Globals: Fornece acesso ao objeto do browser e browser manager.
-
-Globals.browser.setURL("https://www.google.com.br/");
-Globals.browserManager.waitElementPresent(TypeSelector.CSSSELECTOR.getTypeSelector(),"element");
-
-
-# Selenium :  Fronece acesso ao objeto Selenium e Selenium manager
-
-SeleniumManager.getInstance().clickElement(TypeSelector.CLASSNAME.getTypeSelector(), "String com o Elemento");
-
-# ReportManager: Gera relatório de execução dos testes.
-
-ReportManager.getInstance().generateReport("");
-ReportManager.getInstance().startTest("Gerar cadastro");
-ReportManager.getInstance().evidenceTestFail("CurrentTest", "Mensagem", Globals.browser.getWebDriver());
-ReportManager.getInstance().endTestReport();
-ReportManager.getInstance().flushReport();
+Sera gerado um report em src/main/reportTesting em .html com os dados dos testes automatizados UI.

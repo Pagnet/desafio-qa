@@ -2,12 +2,14 @@ package br.com.blue.data;
 
 public class ObjectData implements Data{
 
+    private int[] id;
     private String[] nomeComprador;
     private double[] preco;
     private int[] quantia;
 
-    public ObjectData(String[] nome, double[] preco, int[] quantia) {
+    public ObjectData(int[] id,String[] nome, double[] preco, int[] quantia) {
 
+        this.id = id;
         this.nomeComprador = nome;
         this.preco = preco;
         this.quantia = quantia;
@@ -25,4 +27,7 @@ public class ObjectData implements Data{
         return quantia;
     }
 
+    public int[] getId() {
+        return id;
+    }
 }

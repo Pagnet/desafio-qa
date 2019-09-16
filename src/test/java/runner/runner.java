@@ -9,28 +9,27 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        features = {"src/test/java/features/"},
+        tags={"@test"},
+        glue = {"steps"}
+)
+public class runner {
 
-    @RunWith(Cucumber.class)
-    @CucumberOptions(
-            features = {"src/test/java/features/caseTests.feature"},
-            tags="@test",
-            glue = {"steps/caseTests.java"}
+    @BeforeClass
+    public static void inicializa() throws Exception {
+        new DefaultApplicationInitializer();
+        ReportManager.getInstance().generateReport("");
+        ReportManager.getInstance().startTest("CaseTeste - Validações HeroukApp");
 
-    )
-    public class runner {
-
-        @BeforeClass
-        public static void inicializa() throws Exception {
-            new DefaultApplicationInitializer();
-            ReportManager.getInstance().generateReport("Testes Desafio QA");
-        }
-
-
-
-        @AfterClass
-        public static void finalizaReport() {
-            Globals.browser.close();
-        }
+    }
 
 
+    @AfterClass
+    public static void finalizaTest() {
+
+        ReportManager.getInstance().closeReport();
+        Globals.browser.close();
+    }
 }

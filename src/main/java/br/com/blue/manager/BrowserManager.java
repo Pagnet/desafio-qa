@@ -2,6 +2,8 @@ package br.com.blue.manager;
 
 import br.com.blue.browser.Browser;
 import br.com.blue.report.ReportManager;
+
+import br.com.blue.util.Globals;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -53,42 +55,42 @@ public class BrowserManager {
 
             for (int i = 0; i < size ; i++){
 
-                if(elementFind.equals(valueCompare)){
-                    System.out.println(messageSucess);
-                    ReportManager.getInstance().evidenceTestSucess(messageSucess +" - "+valueCompare);
+                String nome = elementFind.get(i).getText();
 
-                }
-                else{
+                if(nome.contains(valueCompare.replace(".",","))){
                     System.out.println(messageSucess);
-                    ReportManager.getInstance().evidenceTestFail(messageError + " - " + valueCompare);
+                    ReportManager.getInstance().evidenceTestSucess(messageSucess);
+                    break;
                 }
             }
 
         }
-        catch(TimeoutException | NoSuchElementException e){
-            ReportManager.getInstance().evidenceTestFail(messageError);
+        catch(Exception e){
             System.out.println(messageError);
+            ReportManager.getInstance().evidenceTestFail(messageError);
+            throw  e;
         }
     }
 
-    public boolean isElementDisplayed(String typeBy, String element)throws  Exception{
+    public void compareElementIsEqual(String typeBy, String element, String valueCompare, String messageSucess, String messageError)throws  Exception{
 
-        By elementBy = SeleniumManager.getInstance().By(typeBy,element);
+        try{
+                String nome = SeleniumManager.getInstance().getTextElement(typeBy,element);
 
-        fluentWait(10,2).until(ExpectedConditions.visibilityOfElementLocated(elementBy));
-
-        if(SeleniumManager.getInstance().findElement(typeBy, element).isDisplayed()) {
-
-            return true;
+                if(nome.contains(valueCompare.replace(".",","))){
+                    System.out.println(messageSucess);
+                    ReportManager.getInstance().evidenceTestSucess(messageSucess +" - "+valueCompare);
+                }
+                else{
+                    throw new Exception(messageError);
+                }
         }
-        else{
-            return false;
-        }
+        catch(Exception e){
+            System.out.println(e.getMessage());
+            ReportManager.getInstance().evidenceTestFail(messageError);
+            throw  e;
 
+        }
     }
-
-
-
-
 
 }

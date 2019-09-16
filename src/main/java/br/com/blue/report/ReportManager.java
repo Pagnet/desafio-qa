@@ -37,7 +37,7 @@ public class ReportManager {
     String nomeProjeto = PropertiesFactory.getProp().getProperty("prop.nameProject");
 
     public void generateReport(String currentTest) {
-        File extentReportFile1 = new File(br.com.blue.util.PathUtils.getPath(PropertiesFactory.getProp().getProperty("prop.pathReportFile")));
+        File extentReportFile1 = new File(PathUtils.getPath(PropertiesFactory.getProp().getProperty("prop.pathReportFile")));
         Date data = new Date();
         SimpleDateFormat formatdata = new SimpleDateFormat("dd_MM_yyyy_HH_mm_ss");
         String dataFormatada = formatdata.format(data);
@@ -69,7 +69,10 @@ public class ReportManager {
         extentTest.log(LogStatus.INFO, "Snapshot : " + extentTest.addScreenCapture(screenshotImagens));
     }
 
-    public void evidenceTestSucess(String detailsPass) {extentTest.log(LogStatus.PASS, "PASS - " + detailsPass);   }
+    public void evidenceTestSucess(String detailsPass) {
+
+        extentTest.log(LogStatus.PASS, "PASS - " + detailsPass);
+    }
 
     public void evidenceTestFail( String detailsFailed) {
         extentTest.log(LogStatus.FAIL, "ERRO - " + detailsFailed);
@@ -80,17 +83,17 @@ public class ReportManager {
     }
 
     public void endTestReport() {
-        System.out.println("#### Escrevendo no br.com.blue.report o teste corrente ####");
+        System.out.println("#### Escrevendo no report o teste corrente ####");
         extent.endTest(extentTest);
     }
 
     public void flushReport() {
-        System.out.println("#### Escrevendo no br.com.blue.report o teste corrente ####");
+        System.out.println("#### Escrevendo no report o teste corrente ####");
         extent.flush();
     }
 
     public void closeReport() {
-        System.out.println("#### Fechando br.com.blue.report ####");
+        System.out.println("#### Fechando report ####");
         extent.close();
     }
 
@@ -114,7 +117,7 @@ public class ReportManager {
 
             return destinoFinal;
         } catch (Exception ex) {
-            throw new RuntimeException("Erro na geracao do Screenshot do br.com.blue.report", ex);
+            throw new RuntimeException("Erro na geracao do Screenshot do report", ex);
         }
     }
 
@@ -136,7 +139,7 @@ public class ReportManager {
 
             return destinoFinal;
         } catch (Exception ex) {
-            throw new RuntimeException("Erro na geracao do Screenshot do br.com.blue.report", ex);
+            throw new RuntimeException("Erro na geracao do Screenshot do report", ex);
         }
     }
 
