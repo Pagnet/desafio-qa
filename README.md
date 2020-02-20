@@ -28,7 +28,7 @@ Ao final o resultado do desafio deve ter:
 - Uma suíte de teste pronta para receber testes
 - Um teste de integração escrito na suíte que foi montada
 - Uma documentação de como executa o ambiente de teste
-- Um Pull Request com toda a solução implementada para [este repositório](https://github.com/Pagnet/desafio-qa)
+- Um Pull Request aberto para [este repositório](https://github.com/Pagnet/desafio-qa), com toda a solução implementada nele
 
 ## Instruções de entrega
 
