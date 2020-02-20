@@ -1,52 +1,49 @@
 # Desafio QA
-A idéia deste desafio é nos permitir avaliar melhor as habilidades de candidatos à vagas de QA.
 
-Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quiser, porém normalmente você não deve precisar de mais do que algumas horas.
-
-## Instruções de entrega do desafio
-
-1. Primeiro, faça um fork deste projeto para sua conta no Github (crie uma se você não possuir).
-2. Em seguida, implemente o projeto tal qual descrito abaixo, em seu clone local.
-3. Por fim, envie via email os arquivos do teste para seu contato na BLU.
+Este desafio tem o intuito de avaliar suas habilidades na engenharia da qualidade de software.
 
 ## Descrição do projeto
 
-**LINK:** https://desafio-qa.herokuapp.com/
+**Material para execução do teste:** https://desafio-qa.herokuapp.com/
 
-Você recebeu este [link](https://desafio-qa.herokuapp.com/) onde esta um sistema já implementado.
+Neste [link](https://desafio-qa.herokuapp.com/) esta um sistema que controla as vendas de uma loja.
 
-Esta tela representa uma lista de produtos vendidos por uma determinada loja.
+Esta tela apresenta uma lista de todos os produtos vendidos.
 
-Em cada linha da tabela deve ter a descrição do produto, preço, quantidade, total, nome e endeereço do vendedor.
+Em cada linha da tabela deve ter a descrição do produto, preço, quantidade, total, nome e endereço do vendedor.
 
-Esta tela também deve mostrar o somátorio de todas as vendas.
+Esta tela também deve mostrar o somátorio de todas as vendas da loja.
 
 # Desafio
 
 Esta tela possui vários erros.
 
-A sua tarefa é revisar visualmente todo o conteúdo e reportar todos os problemas encontrados.
+A sua tarefa é revisar todo o conteúdo e reportar todos os problemas encontrados, de uma forma que qualquer pessoa consiga entender o que esta sendo reportado.
 
-Ao final é necessário que você escreva ao menos um teste de integração para esta tela.
+Ao final é necessário que você monte uma suíte de teste e escreva ao menos um teste de integração para [esta tela](https://desafio-qa.herokuapp.com/).
 
-Seu teste DEVE:
+Ao final o resultado do desafio deve ter:
 
-- Ter um relatório com todos os bugs encontrado
-- O relatório precisa ter um estrutura mínima, para facilitar o entendimento(use o padrão que lhe agradar)
-- Ter ao menos um teste de integração para a tela
+- Um relatório com todos os bugs encontrado, seguindo uma metodologia de sua preferência
+- Uma suíte de teste pronta para receber testes
+- Um teste de integração escrito na suíte que foi montada
+- Uma documentação de como executa o ambiente de teste
+- Um Pull Request com toda a solução implementada para [este repositório](https://github.com/Pagnet/desafio-qa)
 
-Seu teste não precisa:
+## Instruções de entrega
 
-- Refazer a tela
-- Ajustar os bugs
+1. Primeiro, faça um fork deste projeto para sua conta no Github(crie uma conta no Github se você não tiver).
+2. Em seguida, implemente o desafio seguindo as [instruções que estão no capítulo acima](#desafio)
+3. Por fim, envie o link do seu Pull Request, com a resultado do desafio, para o seu contato na BLU.
 
 ## Avaliação
 
 Seu teste será avaliado de acordo com os seguintes critérios.
 
-1. Seu teste preenche os requerimentos básicos?
-2. Você documentou corretamente todos os bugs da aplicação?
-3. Você seguiu as instruções de envio do desafio?
-4. Qualidade do teste integração.
+1. Seu teste preenche todos os requerimentos do [desafio proposto aqui](#desafio)?
+2. O projeto esta bem documentado?
+3. Possui uma suíte de teste bem organizada?
+4. Implementou ao menos um teste automatizado?
+5. Gerou um relatório com todos os bugs encontrados, de forma detalhada e de fácil entendimento?
 
-Adicionalmente, tentaremos verificar a sua familiarização com as bibliotecas padrões (standard libs), bem como sua experiência com testes automatizados a partir da estrutura de seu projeto.
+Boa sorte.
