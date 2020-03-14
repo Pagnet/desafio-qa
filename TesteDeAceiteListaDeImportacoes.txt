@@ -1,0 +1,16 @@
+
+Teste de aceite:
+
+Como usuário do sistema:
+P1: Acessar a lista de importações da loja
+R1: Na lista de produtos importados, cada produto deve aparecer listado com as seguintes colunas:
+	- Comprado
+	- Descrição
+	- Preço
+	- Quantidade
+	- Total
+	- Nome Vendedor
+	- Endereço Vendedor
+R2: A coluna "Total" deve apresentar a multiplicação da coluna "Preço" pela coluna "Quantidade"
+R3: Deve ser apresentada o número da importação, juntamente com o valor total (soma dos valores dos produtos, coluna "Total")
+R4: Deve ser apresentado no cabeçalho da tela o total bruto das importações, compreendendo na soma de todas as importações listadas na tela
