@@ -1,0 +1,9 @@
+
+Instruções para executar a suite de automação:
+- descompactar os drivers em um diretório (o código atual espera que esteja no diretório 'C:\\SeleniumDrivers')
+- adicionar a pasta com os drivers no path do windows
+- criar um projeto e adicionar o codigo fonte
+- adicionar as bibliotecas contidas no POM.XML
+- caso não tenha descommpactado os drivers em 'C:\\SeleniumDrivers', ajustar a classe 'carvalho.mendes.rafael.browser.impl.BrowserImpl' com o caminho da pasta que contém os drivers
+- rodar a classe carvalho.mendes.rafael.main.MainTest
+- como resultado, o teste deverá executar uma vez no chrome e uma vez no firefox
