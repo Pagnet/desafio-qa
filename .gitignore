@@ -5,7 +5,7 @@ node_modules
 report-visual/
 screenshots/
 report-visual/visual-regression/
-visual-reference/*
+
 # Added empty reports folder
 !report-visual/.gitkeep
 report/
