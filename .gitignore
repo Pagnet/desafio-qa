@@ -1,0 +1,20 @@
+# Dependency directory
+node_modules
+
+# Screenshots
+report-visual/
+screenshots/
+report-visual/visual-regression/
+
+# Added empty reports folder
+!report-visual/.gitkeep
+report/
+
+#IDEA files
+.idea/*
+
+#Linter
+.eslintrc.json
+
+#Package-lock
+package-lock.json
