@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Teste realizado por Saulo Santiago</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" media="all" href="assets/styles.css" data-turbolinks-track="reload" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io-stream/0.9.1/socket.io-stream.js"></script>
+
+</head>
+
+<body class='container'>
+  <h1>
+    <i class="fas fa-store"></i>
+    Lista de importações da sua loja
+  </h1>
+
+  <h2>
+    Total Bruto das importações
+    <price id="total-all-imports">0,00</price>
+  </h2>
+
+
+
+  <div class='flash-notice-wrapper'></div>
+  <div class='importer-header' id="importer-status-imported">
+    <h2>
+      <b>
+        <i class="fas fa-cloud"></i>
+        Importação Nº 5
+      </b>
+    </h2>
+    <h3>
+      Total bruto da importação
+      <price id="total-imports">R$ 96,00</price>
+      </br>
+      </br>
+    </h3>
+  </div>
+
+  <table class='importer-purchases-table'>
+    <tr>
+      <th class='th--lg'><i class="fas fa-user-friends"></i>Comprado</th>
+      <th class='th--lg'><i class="fas fa-info-circle"></i>Descrição</th>
+      <th class='th--sm'><i class="fas fa-tag"></i>Preco</th>
+      <th class='th--sm'><i class="fas fa-list-ol"></i>Qtde.</th>
+      <th class='th--md'><i class="fas fa-calculator"></i>Total</th>
+      <th class='th--lg'><i class="fas fa-building"></i>Nome vendendor</th>
+      <th class='th--lg'><i class="fas fa-map-marked-alt"></i>Endereços vendedor</th>
+    </tr>
+
+    <tr>
+      <td>João Silva</td>
+      <td>R$10 off R$20 of food</td>
+      <td>R$ 10,00</td>
+      <td>R$ 20,00</td>
+      <td>4</td>
+      <td>987 Fake St</td>
+      <td>Bob&#39;s Pizza
+      </td>
+    </tr>
+    <tr>
+      <td>Amy Pond</td>
+      <td>R$30 of awesome for R$10</td>
+      <td>R$ 10,00</td>
+      <td>R$ 50,00</td>
+      <td>10</td>
+      <td>456 Unreal Rd</td>
+      <td>Tom&#39;s Awesome Shop
+      </td>
+    </tr>
+    <tr>
+      <td>Marty McFly</td>
+      <td>R$20 Sneakers for R$5</td>
+      <td>R$ 5,00</td>
+      <td>R$ 5,00</td>
+      <td>2</td>
+      <td>123 Fake St</td>
+      <td>Sneaker Store Emporium
+      </td>
+    </tr>
+    <tr>
+      <td>Snake Plissken</td>
+      <td>R$20 Sneakers for R$5</td>
+      <td>R$ 5,00</td>
+      <td>R$ 20,00</td>
+      <td>8</td>
+      <td>123 Fake St</td>
+      <td>Sneaker Store Emporium
+      </td>
+    </tr>
+
+  </table>
+
+
+</body>
+
+</html>

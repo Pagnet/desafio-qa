@@ -1,0 +1,44 @@
+{
+	"linhasDaTabelaDeImportacoes": [
+		{
+			"linhaDaTabelaDeImportacoes": "2",
+			"infoCelulaComprador":"João Silva",
+			"infoCelulaDescricao":"R$10 off R$20 of food",
+			"infoCelulaPreco":"R$ 10,00",
+			"infoCelulaQuantidade":"R$ 20,00",
+			"infoCelulaTotal":"4",
+			"infoCelulaNomeVendedor":"Bob's Pizza",
+			"infoCelulaEnderecoVendedor":"987 Fake St"
+		},
+		{
+			"linhaDaTabelaDeImportacoes": "3",
+			"infoCelulaComprador":"Amy Pond",
+			"infoCelulaDescricao":"R$30 of awesome for R$10",
+			"infoCelulaPreco":"R$ 10,00",
+			"infoCelulaQuantidade":"R$ 50,00",
+			"infoCelulaTotal":"10",
+			"infoCelulaNomeVendedor":"Tom's Awesome Shop",
+			"infoCelulaEnderecoVendedor":"456 Unreal Rd"
+		},
+		{
+			"linhaDaTabelaDeImportacoes": "4",
+			"infoCelulaComprador":"Marty McFly",
+			"infoCelulaDescricao":"R$20 Sneakers for R$5",
+			"infoCelulaPreco":"R$ 5,00",
+			"infoCelulaQuantidade":"R$ 5,00",
+			"infoCelulaTotal":"2",
+			"infoCelulaNomeVendedor":"Sneaker Store Emporium",
+			"infoCelulaEnderecoVendedor":"123 Fake St"
+		},
+		{
+			"linhaDaTabelaDeImportacoes": "5",
+			"infoCelulaComprador":"Snake Plissken",
+			"infoCelulaDescricao":"R$20 Sneakers for R$5",
+			"infoCelulaPreco":"R$ 5,00",
+			"infoCelulaQuantidade":"R$ 20,00",
+			"infoCelulaTotal":"8",
+			"infoCelulaNomeVendedor":"Sneaker Store Emporium",
+			"infoCelulaEnderecoVendedor":"123 Fake St"
+		}		
+	]
+}

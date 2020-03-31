@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Execution" parallel="none" configfailurepolicy="continue">
+
+	<!-- *** Product information *** -->
+	<parameter name="productName" value="Imports" />
+	<!-- Site do desafio - "https://desafio-qa.herokuapp.com/" -->
+	<!-- Já que o site era estático, tomei a liberdade de disponibiliza-lo via docker - "http://10.13.0.2:3000" -->
+	<parameter name="systemUrl" value="http://10.13.0.2:3000" />  <!-- "http://10.13.0.2:3000" || "https://desafio-qa.herokuapp.com/"-->
+
+	<!-- *** Environment information *** -->
+	<parameter name="environmentExecution" value="REMOTE" /> <!-- LOCAL - REMOTE -->
+	<parameter name="browser" value="CHROME" /> <!-- CHROME -->
+	<parameter name="dimensionWidth" value="1920" /> <!-- Default value="" --><!-- 1280 -->
+	<parameter name="dimensionHeight" value="1080" /> <!-- Default value="" --><!-- 1024 -->
+	
+	<!-- *** Environment local information *** -->
+	<parameter name="driverPath" value="" />
+
+	<!-- *** Environment remote information *** -->
+	<!-- Para execução de via TestNG, fora da rede (docker) - "http://localhost:4444/wd/hub" -->
+	<!-- Para execução de via Maven, dentro do contexto da rede (docker) - "http://10.13.0.4:4444/wd/hub" -->
+	<parameter name="remoteURL" value="http://10.13.0.4:4444/wd/hub" />
+
+	<!-- Versão do browser Chrome que será usado no Selenoid (docker pull desta versão (80.0) já foi realizada no docker-compose) -->
+	<parameter name="browserVersion" value="80.0" />
+
+	<!-- Identifica se será disponibilizado acesso via VCN ao container -->
+	<parameter name="enableVNC" value="true" />
+
+	<!-- *** Report information *** -->
+	<!-- Estratégia utilizada para o ExtentReports -->
+	<parameter name="reportStrategy" value="SUITE" /> <!-- Default value="SUITE" -->
+
+	<!-- Identifica se serão registrados screenshots para todos os passos (true) ou somente para os que falharem (false) -->
+	<parameter name="printAllSteps" value="true" />
+
+    <listeners>
+        <listener class-name="base.listener.NGTestListener" />
+    </listeners>
+
+	<test name="Imports">
+		<classes>
+			<class name="execution.run.Imports" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,13 @@
+{
+	"titulosDaTabelaDeImportacoes": [
+		{
+			"infoTituloComprador":"Comprador",
+			"infoTituloDescricao":"Descrição",
+			"infoTituloPreco":"Preço",
+			"infoTituloQuantidade":"Qtde.",
+			"infoTituloTotal":"Total",
+			"infoTituloNomeVendedor":"Nome vendedor",
+			"infoTituloEnderecoVendedor":"Endereços vendedor"
+		}
+	]
+}
