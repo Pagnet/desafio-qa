@@ -67,9 +67,9 @@ Este repositório tem como objetivo realizar a entrega do desafio de qualidade d
                 ![SelenoidUiVnc](./images/selenoid_ui_vnc.png)
                 
         - Executar o comando `docker run --name MavenExecution --network imports-app_overlay -v <full_path_of (__tests__/integration)>:/usr/src/mymaven -w /usr/src/mymaven maven:3.5.4-jdk-8-alpine mvn clean test`
+            ![InicioMvnTest](./images/comando_mvn_test.png)
             ![InicioMvnTest](./images/inicio_mvn_test.png)
             ![InicioTestes](./images/inicio_testes.png)
-            ![FimTestes](./images/fim_testes.png)
             1. Caso queira, você poderá realizar alterações no projeto de testes e nos parâmetros de execução ((vide [testng.xml](./__tests__/integration/testng.xml)). Após isso, poderá repetir a execução dos testes com o comando `docker start MavenExecution`.
 
         - Após a execução, você poderá consultar o relatório gerado no formato HTML em `..../__tests__/integration/test-output/Reports_Imports/Execution_<TIMESTAMP>`
