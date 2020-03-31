@@ -19,7 +19,7 @@ public static WebDriver driver;
 	
 	@BeforeClass
 	public static void setup() {
-		System.setProperty("webdriver.chrome.driver", "C:\\DEV\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "drivers//chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.navigate().refresh();
