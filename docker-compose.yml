@@ -1,0 +1,57 @@
+version: '2'
+
+services:
+    app:
+        build: .
+        container_name: app
+        command: npm start
+        ports:
+            - "3000:3000"
+            - "9229:9229"
+        volumes:
+            - .:/usr/app
+        networks:
+            overlay:
+              ipv4_address: 10.13.0.2
+
+    chrome:
+        image: selenoid/vnc:chrome_80.0
+        container_name: chrome_80.0
+        networks:
+            overlay:
+              ipv4_address: 10.13.0.20
+
+    selenoid:
+        image: aerokube/selenoid:latest
+        container_name: selenoid
+        ports:
+        - "4444:4444"
+        volumes:
+        - ./__tests__/bconfig:/etc/selenoid/
+        - "/var/run/docker.sock:/var/run/docker.sock" 
+        command: ["-container-network", "imports-app_overlay" , "-timeout" , "20m"]    
+        networks:
+            overlay:
+              ipv4_address: 10.13.0.4
+
+    selenoid-ui:
+        image: aerokube/selenoid-ui:latest
+        container_name: selenoid-ui
+        links:
+        - selenoid
+        ports:
+        - "8080:8080"
+        command: ["--selenoid-uri", "http://10.13.0.4:4444"]
+        networks:
+            overlay:
+              ipv4_address: 10.13.0.5
+
+networks:
+  overlay:
+    driver: bridge
+    ipam:
+     config:
+       - subnet: 10.13.0.0/24
+         gateway: 10.13.0.1
+
+    

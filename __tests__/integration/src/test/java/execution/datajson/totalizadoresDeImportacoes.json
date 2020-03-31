@@ -1,0 +1,9 @@
+{
+	"totalizadoresDeImportacoes": [
+		{
+			"valorTotalImportacaoAtual": "R$ 96,00",
+			"valorTotalImportacoes": "R$496,00" 
+			//Como essa é a importação 5 irei exemplificar, imaginando que cada uma das outras 4 importações sejam de R$100,00
+		}
+	]
+}
