@@ -1,0 +1,16 @@
+{
+  "name": "desafio-qa-blu-jonathan",
+  "version": "1.0.0",
+  "description": "Testes da página da lista de importação",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox"
+  },
+  "author": "Jonathan Eleuterio",
+  "dependencies": {
+    "cypress": "^4.0.1"
+  }
+}

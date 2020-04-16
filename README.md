@@ -1,49 +1,34 @@
-# Desafio QA
+## About ##
 
-Este desafio tem o intuito de avaliar suas habilidades na engenharia da qualidade de software.
+![MaxMilhas](https://www.promoforum.com.br/attachments/upload_2017-9-16_0-25-3-png.81256/)
 
-## Descrição do projeto
+| Service       | Status  |
+| ------------- |---------|
+|Cypress        |  [![Cypress.io tests](https://img.shields.io/badge/cypress.io-tests-green.svg?style=flat-square)](https://cypress.io)|
+|Version        | [![npm version](https://badge.fury.io/js/cypress.svg)](https://badge.fury.io/js/cypress)|
 
-**Material para execução do teste:** https://desafio-qa.herokuapp.com/
+Projeto desenvolvido em JS com o framework Cypress.
+Não foi aplicado a técnica de Actions pós não tem interação por ação na página.
+Não foi aplicado Gerkin/Cucumber pós não há fluxo de comportamento na página, assim não se faz necessário. Tornando assim o projeto mais enxuto.
 
-Neste [link](https://desafio-qa.herokuapp.com/) esta um sistema que controla as vendas de uma loja.
+### Requirements ###
 
-Esta tela apresenta uma lista de todos os produtos vendidos.
+Install [Node.js](https://nodejs.org/en/download/)
 
-Em cada linha da tabela deve ter a descrição do produto, preço, quantidade, total, nome e endereço do vendedor.
+### About Cypress ###
 
-Esta tela também deve mostrar o somátorio de todas as vendas da loja.
+[Cypress](http://cypress.io)
 
-# Desafio
+### Install Dependencies ###
+```npm i```
 
-Esta tela possui vários erros.
+### Headless Execution ###
+```npm run cy:run```
 
-A sua tarefa é revisar todo o conteúdo e reportar todos os problemas encontrados, de uma forma que qualquer pessoa consiga entender o que esta sendo reportado.
+### Dev Envrioment Execution ###
+```npm run cy:open```
+```Selecionar o teste "list.spec.js"```
 
-Ao final é necessário que você monte uma suíte de teste e escreva ao menos um teste de integração para [esta tela](https://desafio-qa.herokuapp.com/).
-
-Ao final o resultado do desafio deve ter:
-
-- Um relatório com todos os bugs encontrado, seguindo uma metodologia de sua preferência
-- Uma suíte de teste pronta para receber testes
-- Um teste de integração escrito na suíte que foi montada
-- Uma documentação de como executa o ambiente de teste
-- Um Pull Request aberto para [este repositório](https://github.com/Pagnet/desafio-qa), com toda a solução implementada nele
-
-## Instruções de entrega
-
-1. Primeiro, faça um fork deste projeto para sua conta no Github(crie uma conta no Github se você não tiver).
-2. Em seguida, implemente o desafio seguindo as [instruções que estão no capítulo acima](#desafio)
-3. Por fim, envie o link do seu Pull Request, com a resultado do desafio, para o seu contato na BLU.
-
-## Avaliação
-
-Seu teste será avaliado de acordo com os seguintes critérios.
-
-1. Seu teste preenche todos os requerimentos do [desafio proposto aqui](#desafio)?
-2. O projeto esta bem documentado?
-3. Possui uma suíte de teste bem organizada?
-4. Implementou ao menos um teste automatizado?
-5. Gerou um relatório com todos os bugs encontrados, de forma detalhada e de fácil entendimento?
-
-Boa sorte.
+### Browser Execution ###
+```npm run cy:run:chrome```
+```npm run cy:run:firefox```

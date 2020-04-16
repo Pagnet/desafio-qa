@@ -1,0 +1,5 @@
+{
+    "chromeWebSecurity": false,
+    "video": false,
+    "baseUrl": "https://desafio-qa.herokuapp.com/"
+}
