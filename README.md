@@ -1,49 +1,49 @@
-# Desafio QA
+# Configuração para executar o ambiente de teste
 
-Este desafio tem o intuito de avaliar suas habilidades na engenharia da qualidade de software.
 
-## Descrição do projeto
+## Especificações para o projeto
 
-**Material para execução do teste:** https://desafio-qa.herokuapp.com/
+- IDE Eclipse
+- Java 8
+- JUnit 4
+- Selenium 3.4.0
+- Maven
+- Chrome
 
-Neste [link](https://desafio-qa.herokuapp.com/) esta um sistema que controla as vendas de uma loja.
+## Como executar
 
-Esta tela apresenta uma lista de todos os produtos vendidos.
+1- Importar o projeto no Eclipse como Maven Project
 
-Em cada linha da tabela deve ter a descrição do produto, preço, quantidade, total, nome e endereço do vendedor.
+2- Abrir a classe "ListaImportacoesTest.java" -> Run As -> JUnit Test
 
-Esta tela também deve mostrar o somátorio de todas as vendas da loja.
 
-# Desafio
 
-Esta tela possui vários erros.
+# Relatório de erros econtrados
 
-A sua tarefa é revisar todo o conteúdo e reportar todos os problemas encontrados, de uma forma que qualquer pessoa consiga entender o que esta sendo reportado.
 
-Ao final é necessário que você monte uma suíte de teste e escreva ao menos um teste de integração para [esta tela](https://desafio-qa.herokuapp.com/).
+## Descrição dos erros que foram encontrados
 
-Ao final o resultado do desafio deve ter:
+1.	O valor do total bruto das importações que está logo a baixo do título da página está zerado.
+2.	O valor total bruto das importações está incorreto.
+3.	O título da coluna 2 da tabela, “Comprado”, está escrito errado.
+4.	O título da coluna 3 da tabela, “Preco”, está escrito errado.
+5.	O título da coluna 6 da tabela, “Nome vendendor”, está escrito errado.
+6.	O título da coluna 7 da tabela, “Endereços vendedor”, está escrito errado.
+7.	Os valores da coluna 5, “Total”, estão trocados com os valores da coluna 4, “Qtde.”.
+8.	Os valores da coluna 5, “Total”, não estão sendo multiplicados corretamente com os valores do preço e quantidade.
+9.	Os valores da coluna 6, “Nome vendendor”, estão trocados com os valores da coluna 7, “Endereços vendedor”.
+10.	A formatação da coluna 5, “Total” está fora do padrão.
 
-- Um relatório com todos os bugs encontrado, seguindo uma metodologia de sua preferência
-- Uma suíte de teste pronta para receber testes
-- Um teste de integração escrito na suíte que foi montada
-- Uma documentação de como executa o ambiente de teste
-- Um Pull Request aberto para [este repositório](https://github.com/Pagnet/desafio-qa), com toda a solução implementada nele
+## Solução proposta para os erros encontrados
 
-## Instruções de entrega
+1.	O valor do total bruto das importações que está logo a baixo do título da página deveria ser o resultado do cálculo da soma de todos os valores totais das importações.
+2.	O valor total bruto das importações deveria ser o resultado do cálculo da soma dos valores da coluna “Total” da tabela.
+3.	O correto seria alterar o título da coluna 2 de “Comprado” para “Comprador”.
+4.	O correto seria alterar o título da coluna 3 de “Preco” para “Preço”.
+5.	O correto seria alterar o título da coluna 6 de “Nome vendendor” para “Nome vendedor”
+6.	O correto seria alterar o título da coluna 7 de “Endereços vendedor” para “Endereço vendedor”.
+7.	Os valores que estão na coluna 5, “Total”, deveriam estar na coluna 4, “Qtde.”, e os valore da coluna 4, “Qtde.”, deveriam estar na coluna 5, “Total”.
+8.	O valor da coluna 4, “Total”, deveria ser o resultado da multiplicação da coluna 3, “Preço”, pela coluna 4, “Qtde.”.  
+9.	Os valores que estão na coluna 6, “Nome vendendor”, deveriam estar na coluna 7, “Endereços vendedor”, e os valore da coluna 7, “Endereços vendedor”, deveriam estar na coluna 6, “Nome vendendor”.
+10.	Na coluna 5, “Total”, os valores deveriam estar centralizados conforme estão nas outras colunas.
 
-1. Primeiro, faça um fork deste projeto para sua conta no Github(crie uma conta no Github se você não tiver).
-2. Em seguida, implemente o desafio seguindo as [instruções que estão no capítulo acima](#desafio)
-3. Por fim, envie o link do seu Pull Request, com a resultado do desafio, para o seu contato na BLU.
-
-## Avaliação
-
-Seu teste será avaliado de acordo com os seguintes critérios.
-
-1. Seu teste preenche todos os requerimentos do [desafio proposto aqui](#desafio)?
-2. O projeto esta bem documentado?
-3. Possui uma suíte de teste bem organizada?
-4. Implementou ao menos um teste automatizado?
-5. Gerou um relatório com todos os bugs encontrados, de forma detalhada e de fácil entendimento?
-
-Boa sorte.
