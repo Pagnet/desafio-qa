@@ -4,29 +4,31 @@ Este desafio tem o intuito de avaliar suas habilidades na engenharia da qualidad
 
 ## Descrição do projeto
 
-**Material para execução do teste:** https://desafio-qa.herokuapp.com/
+**Material para execução do teste:** http://automationpractice.com/index.php
 
-Neste [link](https://desafio-qa.herokuapp.com/) esta um sistema que controla as vendas de uma loja.
+Neste [link](http://automationpractice.com/index.php) está uma loja virtual.
 
-Esta tela apresenta uma lista de todos os produtos vendidos.
+Nesta loja virtual, temos diversos produtos, masculino e feminino.
 
-Em cada linha da tabela deve ter a descrição do produto, preço, quantidade, total, nome e endereço do vendedor.
+Com alguns cliques e alguns preenchimentos, conseguimos realizar fácilmente compras no site.
 
-Esta tela também deve mostrar o somátorio de todas as vendas da loja.
+# Seu desafio deve ter:
 
-# Desafio
+1. Será necessário criar um login na plataforma
 
-Esta tela possui vários erros.
+2. Navegar pelo menu, selecionar um produto e realizar uma compra na loja virtual
 
-A sua tarefa é revisar todo o conteúdo e reportar todos os problemas encontrados, de uma forma que qualquer pessoa consiga entender o que esta sendo reportado.
+3. Verificar se o status da compra está correto no histórico da compra.
 
-Ao final é necessário que você monte uma suíte de teste e escreva ao menos um teste de integração para [esta tela](https://desafio-qa.herokuapp.com/).
+4. Montar uma suíte de teste e escreva ao menos um teste de End To End e um teste de API.
+
+* Fique a vontade para criar novos casos de teste se preferir.
 
 Ao final o resultado do desafio deve ter:
 
-- Um relatório com todos os bugs encontrado, seguindo uma metodologia de sua preferência
-- Uma suíte de teste pronta para receber testes
-- Um teste de integração escrito na suíte que foi montada
+- Um relatório com todos os bugs encontrado caso haja bug, seguindo uma metodologia de sua preferência
+- Uma suíte de teste com os testes End To End
+- Uma suíte de teste com os testes de API
 - Uma documentação de como executa o ambiente de teste
 - Um Pull Request aberto para [este repositório](https://github.com/Pagnet/desafio-qa), com toda a solução implementada nele
 
