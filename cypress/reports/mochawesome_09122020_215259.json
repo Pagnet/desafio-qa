@@ -1,0 +1,130 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-09-13T00:52:23.083Z",
+    "end": "2020-09-13T00:52:59.136Z",
+    "duration": 36053,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "232ce4b6-e9b6-41c0-b16b-8e2ade8e5b2c",
+      "title": "",
+      "fullFile": "cypress/integration/ui/blu_test.js",
+      "file": "cypress/integration/ui/blu_test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a83ec087-adab-4925-b3e1-4ed57c5e0a3a",
+          "title": "conduct research and shopping",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "purchase with existing user",
+              "fullTitle": "conduct research and shopping purchase with existing user",
+              "timedOut": null,
+              "duration": 22440,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"../screenshots/ui/blu_test.js/conduct research and shopping -- purchase with existing user.png\"",
+              "code": "var product = \"Blouse\";\nvar userAccount = {\n  email: 'Jands@gmail.com',\n  password: 'Palestra100'\n};\ncy.searchProduct(product);\ncy.addToCard();\ncy.proceedToCard();\ncy.proceedToCheckout();\ncy.loginAccount(userAccount);\ncy.proceedToCheckout();\ncy.termsOfService();\ncy.proceedToCheckout();\ncy.payByCheck();\ncy.confirmOrder();\ncy.screenshot();\ncy.get('.alert').should('contain', 'Your order on My Store is complete.');",
+              "err": {},
+              "uuid": "ba21e135-526b-45de-87eb-61c361bff0de",
+              "parentUUID": "a83ec087-adab-4925-b3e1-4ed57c5e0a3a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "conduct research with nonexistent product",
+              "fullTitle": "conduct research and shopping conduct research with nonexistent product",
+              "timedOut": null,
+              "duration": 10929,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"../screenshots/ui/blu_test.js/conduct research and shopping -- conduct research with nonexistent product.png\"",
+              "code": "var product = \"Test\";\ncy.searchProduct(product);\ncy.screenshot();\ncy.get('.alert').should('contain', 'No results were found for your search');",
+              "err": {},
+              "uuid": "852c3bab-d1dd-4cde-8149-d902a8f8db25",
+              "parentUUID": "a83ec087-adab-4925-b3e1-4ed57c5e0a3a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ba21e135-526b-45de-87eb-61c361bff0de",
+            "852c3bab-d1dd-4cde-8149-d902a8f8db25"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 33369,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportName": "Relatório",
+        "reportTitle": "Report Title Test",
+        "reportPageTitle": "Título da Página",
+        "takePassedScreenshot": true,
+        "clearOldScreenshots": true,
+        "shortScrFileNames": false,
+        "jsonReport": false,
+        "multiReport": false,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.1.0"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "reporter": "mochawesome-screenshots",
+        "videoCompression": 15,
+        "reporterOptions": {
+          "reportDir": "cypress/reports",
+          "reportName": "Relatório",
+          "reportTitle": "Report Title Test",
+          "reportPageTitle": "Título da Página",
+          "takePassedScreenshot": true,
+          "clearOldScreenshots": true,
+          "shortScrFileNames": false,
+          "jsonReport": false,
+          "multiReport": false,
+          "timestamp": "mmddyyyy_HHMMss"
+        },
+    "timeout": "600000",
+    "screenshotsFolder": "cypress/screenshots"
+}

@@ -1,0 +1,35 @@
+{
+  "name": "desafio-qa",
+  "version": "1.0.0",
+  "description": "Pacote com testes",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "test": "npx cypress run -b chrome --reporter mochawesome",
+    "test-headless": "npx cypress run --headless -b chrome --reporter mochawesome",
+    "clean-reports": "rm -rf cypress/reports",
+    "clean-screenshots": "rm -rf cypress/screenshots",
+    "clean-videos": "rm -rf cypress/videos",
+    "clean-all": "npm run clean-reports && npm run clean-screenshots && npm run clean-videos"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JCoimbraa/desafio-qa.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Jandersson Coimbra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JCoimbraa/desafio-qa/issues"
+  },
+  "homepage": "https://github.com/JCoimbraa/desafio-qa#readme",
+  "dependencies": {
+    "cypress": "^5.1.0",
+    "mochawesome": "^6.1.1"
+  },
+  "devDependencies": {
+    "faker": "^5.1.0"
+  }
+}
