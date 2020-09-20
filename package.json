@@ -1,0 +1,31 @@
+{
+  "name": "desafio-qa",
+  "version": "1.0.0",
+  "description": "Projeto de Testes Automatizados com Nightwatch",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch.cmd"
+  },
+  "keywords": [
+    "desafio",
+    "nightwatch",
+    "test",
+    "testautomation"
+  ],
+  "author": "Manuel Neto",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.2.0",
+    "chromedriver": "^84.0.1",
+    "faker": "^4.1.0",
+    "mocha": "^8.1.3",
+    "nightwatch": "^1.3.7"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "chai-http": "^4.3.0"
+  }
+}
