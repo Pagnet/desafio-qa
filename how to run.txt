@@ -1,0 +1,12 @@
+
+1. Baixar e instalar o Node.js https://nodejs.org/en/
+
+2. Antes de clonar o projeto execute o comando: npm init no diretorio
+
+3. Baixar arquivos ou clonar projeto no diretorio
+
+4. Executar comando npm install para baixar dependencias
+
+5. Para executar os testes de front end executar: npm test
+
+6. Para executar os testes de api executar: .\node_modules\.bin\mocha --timeout 100000
